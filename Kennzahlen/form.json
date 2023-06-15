@@ -1,0 +1,42 @@
+{
+    "elements": [
+    {
+        "type": "List",
+        "name": "Variables",
+        "Caption": "Variables",
+        "rowCount": 5,
+        "add": true,
+        "delete": true,
+        "columns": [
+            {
+                "caption": "Name",
+                "name": "Name",
+                "width": "auto",
+                "sortColumn": "Number",
+                "add": "",
+                "edit": {
+                    "type": "ValidationTextBox",
+                    "validate": "^[A-Za-z0-9]*$"
+                }
+            },
+            {
+                "caption": "Variable",
+                "name": "Variable",
+                "width": "200px",
+                "add" : 0,
+                "edit": {
+                    "type": "SelectVariable"
+                }
+            }
+        ],
+        "values": []
+    },
+    {
+        "type":"ValidationTextBox",
+        "name": "Formula",
+        "caption": "Formula"
+    }
+    ],
+    "actions": [],
+    "status": []
+}
